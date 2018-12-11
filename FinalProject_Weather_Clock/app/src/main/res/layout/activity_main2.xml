@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="33dp"
+        android:text="設定"
+        android:textSize="40sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:minHeight="60dp"
+        android:minWidth="300dp"
+        android:textSize="200sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner2"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/spinner2"
+        android:width="20dp"
+        android:text=":"
+        android:textSize="50sp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="26dp"
+        android:minHeight="60dp"
+        android:minWidth="300dp"
+        android:textSize="200sp" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:minHeight="60dp"
+        android:textSize="200sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="28dp"
+        android:layout_toStartOf="@+id/spinner3"
+        android:text="設定天氣"
+        android:textSize="40sp" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spinner2"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="32dp"
+        android:minHeight="60dp"
+        android:minWidth="300dp"
+        android:textSize="200sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/spinner4"
+        android:layout_marginBottom="46dp"
+        android:layout_marginStart="14dp"
+        android:text="確定" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="取消" />
+
+</RelativeLayout>
